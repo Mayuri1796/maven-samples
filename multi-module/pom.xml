@@ -104,13 +104,20 @@
           </execution>
         </executions>
       </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>3.3.2</version> <!-- Use the latest version -->
-               
-            </plugin>     
-        </plugins>
+           
+       
+             <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.4.1</version> <!-- Use the latest stable version -->
+            <configuration>
+                <!-- Optional configuration -->
+                <failOnMissingWebXml>false</failOnMissingWebXml>
+                <warSourceDirectory>src/main/webapp</warSourceDirectory>
+                <outputDirectory>${project.build.directory}</outputDirectory>
+            </configuration>
+        </plugin>
+                  </plugins>
     </build>
 
 
