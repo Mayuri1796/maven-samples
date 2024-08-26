@@ -21,6 +21,19 @@
         <maven-project-info-reports.plugin.version>3.2.1</maven-project-info-reports.plugin.version>
     </properties>
 
+    <pluginRepositories>
+        <pluginRepository>
+            <id>my-plugin-repo</id>
+            <url>http://github.com/gabrielf/maven-samples</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
     <build>
         <plugins>
             <!-- Maven Compiler Plugin -->
