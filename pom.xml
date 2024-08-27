@@ -121,26 +121,6 @@
                 <version>3.3.2</version> <!-- Use the latest version -->
 
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-enforcer-plugin</artifactId>
-                <version>3.0.0-M3</version> <!-- Use the latest version -->
-                <executions>
-                    <execution>
-                        <id>enforce-maven-version</id>
-                        <goals>
-                            <goal>enforce</goal>
-                        </goals>
-                        <configuration>
-                            <rules>
-                                <requireMavenVersion>
-                                    <version>[3.6.0,)</version> <!-- Specify your required Maven version range -->
-                                </requireMavenVersion>
-                            </rules>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
     </build>
 
